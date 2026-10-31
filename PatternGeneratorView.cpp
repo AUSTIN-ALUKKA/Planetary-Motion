@@ -1,4 +1,5 @@
 //Planetary Motion SOURCE CODE
+// 
 // PatternGeneratorView.cpp : implementation of the CPatternGeneratorView class
 
 #include "pch.h"

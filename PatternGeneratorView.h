@@ -11,7 +11,7 @@
 
 // PatternGeneratorView.h : interface of the CPatternGeneratorView class
 //
-
+//Planetary Motion SOURCE CODE
 
 #pragma once
 
