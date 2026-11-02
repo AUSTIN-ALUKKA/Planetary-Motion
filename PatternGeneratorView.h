@@ -19,21 +19,18 @@
 
 class CPatternGeneratorView : public CView
 {
-    CWinThread* m_pCurrentThread;
-    CArray<CPoint, CPoint> m_PointArray;
 protected:
     CPatternGeneratorView() noexcept;
     DECLARE_DYNCREATE(CPatternGeneratorView)
 
 public:
-    int m_iCounter;
-    
-
     // Planet angles, measured in radians
-    double m_earthAngle;
-    double m_marsAngle;
     double m_mercuryAngle;
     double m_venusAngle;
+    double m_earthAngle;
+    double m_marsAngle;
+    double m_saturnAngle;
+
     afx_msg void OnTimer(UINT_PTR nIDEvent);
 
     CPatternGeneratorDoc* GetDocument() const;
@@ -63,8 +60,6 @@ public:
     afx_msg void OnButtonStart();
     afx_msg void OnButtonStop();
     afx_msg void OnButtonResume();
-
-    static UINT StartThread(LPVOID Param);
 };
 
 #ifndef _DEBUG
